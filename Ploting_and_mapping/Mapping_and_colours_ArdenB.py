@@ -173,7 +173,7 @@ def yearmapper():
 	plt.imshow(mong_bp)
 	plt.show()
 
-	pdb.set_trace()
+	# pdb.set_trace()
 	
 	# ===== Make a slightly less terrible one =====
 	# Comments: this plot easier to read but not a map 
