@@ -27,12 +27,12 @@ __email__ = "arden.burrell@unsw.edu.au"
 #==============================================================================
 
 # general modules
-import os, sys # check for files and so on
+# import os, sys # check for files and so on
 import numpy as np # array manipulations
 
 # plotting modules 
 import matplotlib.pyplot as plt
-import matplotlib.cm as cm
+#import matplotlib.cm as cm
 import matplotlib.colors as mpc
 from matplotlib import ticker
 # import matplotlib as mpl
@@ -193,8 +193,7 @@ def yearmapper():
 	plt.imshow(mong_bp, vmin = vmin, vmax = vmax, cmap=cmap)
 	plt.colorbar()
 	plt.show()
-	pdb.set_trace()
-
+	
 	# ===== Turn this into a proper map with a segmented colorbar =====
 	plt.figure(2) 
 	# Comments: Now its an actual map
@@ -251,7 +250,7 @@ def divergingmap():
 
 	# Generate the map 
 	mapper(TC, cmap, vmin, vmax, region="global", tks=tks)
-	pdb.set_trace()
+	
 
 def sequentialmap():
 	"""
@@ -286,8 +285,7 @@ def sequentialmap():
 	# 	update the script with a function that allows 
 	#	colormas to be scalled. 
 
-	pdb.set_trace()
-
+	
 def groupmap():
 	"""
 	Demonstrate how to map a variable where the values are in 
@@ -320,8 +318,6 @@ def groupmap():
 	# ===== Generate the map =====
 	mapper(groups, cmap, vmin, vmax, region="global", tks=True, tckstr = label2)
 	
-	pdb.set_trace()
-
 
 
 if __name__ == '__main__':
