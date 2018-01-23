@@ -1,8 +1,9 @@
 # UNSW CCRC Markdown Thesis
-These tempates are based on Tom Pollards, updated to conform with UNSW requirements
-Original repository: https://github.com/tompollard/phd_thesis_markdown
-Download latest pandoc and tex distributions
+This work is based on [Tom Pollard's](https://github.com/tompollard), updated to conform with UNSW requirements.
+
 To use, type `make pdf` or `make html` or `make docx`.
+
+Following instructions for original repository: https://github.com/tompollard/phd_thesis_markdown
 
 # Template for writing a PhD thesis in Markdown [![Build Status](https://travis-ci.org/tompollard/phd_thesis_markdown.svg?branch=master)](https://travis-ci.org/tompollard/phd_thesis_markdown)  
 
