@@ -2,11 +2,20 @@
 
 ## Background
 
-This is the introduction. To include a citation to the text, just add the citation key shown in the references.bib file. The style of the citation is determined by the ref_format.csl file. For example, in The Living Sea you can find pictures of the Calypso [@Cousteau1963]
+This is the introduction. To include a citation to the text, just add the citation key shown in the references.bib file. The style of the citation is determined by the ref_format.csl file. For example, cite like this [@Lipson2017].
 
 ## Maths
 
-$$ \rho c \frac{\partial T}{\partial t} =  \frac{\partial q} {\partial x},$$
+Non numbered equations:
+$$ \rho c \frac{\partial T}{\partial t} =  \frac{\partial q} {\partial x} $$
+
+Numbered equations are assisted by installing [pandoc-crossref](https://github.com/lierdakil/pandoc-crossref):
+
+$$ \rho c \frac{\partial T}{\partial t} =  \frac{\partial q} {\partial x} $$ {#eq:yourlabel}
+
+Now you can reference your equations (@eq:yourlabel) inline. If using pandoc-crossref, add the following to each relevant section of the makefile. 
+
+```--filter pandoc-crossref``` 
 
 <!-- 
 To include a reference, add the citation key shown in the references.bib file.
