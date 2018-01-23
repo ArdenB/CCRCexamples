@@ -6,9 +6,6 @@ This is the introduction. To include a citation to the text, just add the citati
 
 ## Maths
 
-Non numbered equations:
-$$ \rho c \frac{\partial T}{\partial t} =  \frac{\partial q} {\partial x} $$
-
 Numbered equations are assisted by installing [pandoc-crossref](https://github.com/lierdakil/pandoc-crossref):
 
 $$ \rho c \frac{\partial T}{\partial t} =  \frac{\partial q} {\partial x} $$ {#eq:yourlabel}
@@ -16,6 +13,9 @@ $$ \rho c \frac{\partial T}{\partial t} =  \frac{\partial q} {\partial x} $$ {#e
 Now you can reference your equations (@eq:yourlabel) inline. If using pandoc-crossref, add the following to each relevant section of the makefile. 
 
 ```--filter pandoc-crossref``` 
+
+Non numbered equations:
+$$ \rho c \frac{\partial T}{\partial t} =  \frac{\partial q} {\partial x} $$
 
 <!-- 
 To include a reference, add the citation key shown in the references.bib file.
