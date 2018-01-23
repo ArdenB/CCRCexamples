@@ -2,9 +2,9 @@
 This work is based on [Tom Pollard's](https://github.com/tompollard), updated to conform with UNSW requirements.
 
 Write in simple text like this:
-![markdown example](https://github.com/ArdenB/CCRCexamples/tree/master/markdown_thesis/source/figures/markdown.png)
+![markdown example](https://github.com/ArdenB/CCRCexamples/raw/master/markdown_thesis/source/figures/markdown.png)
 End up with latex (or html, or docx) like this:
-![latex example](https://github.com/ArdenB/CCRCexamples/tree/master/markdown_thesis/source/figures/latex.png)
+![latex example](https://github.com/ArdenB/CCRCexamples/raw/master/markdown_thesis/source/figures/latex.png)
 
 To use, type `make pdf` or `make html` or `make docx`.
 
