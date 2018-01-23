@@ -4,9 +4,15 @@
 
 This is the introduction. Quisque finibus aliquet cursus. Integer in pellentesque tellus. Duis eu dignissim nulla, a porttitor enim. Quisque vehicula leo non ultrices finibus. Duis vehicula quis sem sit amet sollicitudin. Integer neque est, pharetra et auctor vel, iaculis interdum lectus.
 
+## Maths
+
+$$ \rho c \frac{\partial T}{\partial t} =  \frac{\partial q} {\partial x},$$
+
 <!-- 
 To include a reference, add the citation key shown in the references.bib file.
 -->
+
+## Citations
 
 To include a citation to the text, just add the citation key shown in the references.bib file. The style of the citation is determined by the ref_format.csl file. For example, in The Living Sea you can find pictures of the Calypso [@Cousteau1963].
 
