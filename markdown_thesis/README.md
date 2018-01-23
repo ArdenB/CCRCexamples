@@ -6,7 +6,11 @@ Write in simple text like this:
 
 Type `make pdf` or `make html` or `make docx`. End up with latex (or html, or docx) like this:
 
-![latex example](https://github.com/ArdenB/CCRCexamples/raw/master/markdown_thesis/source/figures/latex.png) ![html example](https://github.com/ArdenB/CCRCexamples/raw/master/markdown_thesis/source/figures/html.png) ![docx example](https://github.com/ArdenB/CCRCexamples/raw/master/markdown_thesis/source/figures/docx.png) 
+|  .pdf  |  .html  |  .docx  |
+| ------------- | ------------- | ------------- |
+| ![latex example](https://github.com/ArdenB/CCRCexamples/raw/master/markdown_thesis/source/figures/latex.png)  | ![html example](https://github.com/ArdenB/CCRCexamples/raw/master/markdown_thesis/source/figures/html.png)  |  ![docx example](https://github.com/ArdenB/CCRCexamples/raw/master/markdown_thesis/source/figures/docx.png)  |
+
+  
 
 If you prefer to work in Rmarkdown, see: https://github.com/rensa/unswthesisdown
 
