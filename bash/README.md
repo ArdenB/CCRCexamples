@@ -22,3 +22,12 @@ Bash tips and tricks
 `ls –lrth` : list,reverse,time,human readable
 
 `~/.ssh/config`: can put server shortcut names in there to help ssh and rsycn etc.
+
+Chris Bull's Bash functions
+---------------------------
+
+Chris sent in these handy function (or just learn how to make function)
+
+* [*Bash function for painless rsync*](http://christopherbull.com.au/hpc/bash-function-rsync/)
+* [*Grabbing paths straight to the clipboard*](http://christopherbull.com.au/hpc/bash-function-clipit/)
+

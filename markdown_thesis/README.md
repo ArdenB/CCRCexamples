@@ -12,7 +12,7 @@ Type `make pdf` or `make html` or `make docx`. End up with latex (or html, or do
 
   
 
-If you prefer to work in Rmarkdown, see: https://github.com/rensa/unswthesisdown
+If you prefer to work in Rmarkdown, see James Goldie's UNSW port: https://github.com/rensa/unswthesisdown
 
 The following instructions are from the original repository: https://github.com/tompollard/phd_thesis_markdown
 
