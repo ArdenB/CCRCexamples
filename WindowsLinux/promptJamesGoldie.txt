@@ -1,0 +1,70 @@
+# copy this into your .bashrc!
+
+if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
+	export TERM='gnome-256color';
+elif infocmp xterm-256color >/dev/null 2>&1; then
+	export TERM='xterm-256color';
+fi;
+
+if tput setaf 1 &> /dev/null; then
+	tput sgr0; # reset colors
+	bold=$(tput bold);
+	reset=$(tput sgr0);
+	# Solarized colors, taken from http://git.io/solarized-colors.
+	black=$(tput setaf 0);
+	blue=$(tput setaf 4);
+	cyan=$(tput setaf 6);
+	green=$(tput setaf 2);
+	orange=$(tput setaf 166);
+	purple=$(tput setaf 5);
+	red=$(tput setaf 1);
+	violet=$(tput setaf 61);
+	white=$(tput setaf 15);
+	yellow=$(tput setaf 3);
+else
+	bold='';
+	reset="\e[0m";
+	black="\e[1;30m";
+	blue="\033[38;5;45m";
+	cyan="\033[38;5;51m";
+	green="\033[38;5;70m";
+    lime="\033[38;5;190m";
+	orange="\033[38;5;172m";
+	purple="\033[38;5;55m";
+	red="\033[38;5;160m";
+	violet="\033[38;5;93m";
+	white="\e[1;37m";
+	yellow="\033[38;5;226m";
+    gold="\033[38;5;214m";
+    pink="\033[38;5;205m";
+fi;
+
+# Highlight the user name when logged in as root.
+if [[ "${USER}" == "root" ]]; then
+	userStyle="${cyan}";
+else
+	userStyle="${cyan}";
+fi;
+
+# Highlight the hostname when connected via SSH.
+if [[ "${SSH_TTY}" ]]; then
+	hostStyle="${yellow}";
+else
+	hostStyle="${yellow}";
+fi;
+
+# Set the terminal title to the current working directory.
+PS1="\[\033]0;\w\007\]";
+PS1+="\[${bold}\]\n"; # newline
+PS1+="\[${userStyle}\]\u"; # username
+PS1+="\[${white}\]@";
+PS1+="\[${hostStyle}\]\h"; # host
+PS1+="\[${white}\]:";
+PS1+="\[${purple}\]\W"; # basename of working directory
+# PS1+="\$(prompt_git \"\[${white}\] on \[${violet}\]\" \"\[${blue}\]\")"; # Git repository details
+# PS1+="\n";     # james: i prefer a single-line prompt
+PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
+export PS1;
+
+PS2="\[${yellow}\]→ \[${reset}\]";
+export PS2;
