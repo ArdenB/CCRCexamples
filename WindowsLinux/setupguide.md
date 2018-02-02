@@ -17,7 +17,7 @@ sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get upgrade -y && sud
 ``` 
 THis may take a little while.  
 
-## Step 2. Getting getting graphical programs working
+## Step 2. Getting graphical programs working
 
 BY defualt the WSL doesn't ship with an x11 server which means that graphical apps like gedit and ncview will not work. 
 
@@ -51,13 +51,11 @@ xeyes
 This will only work if xming is running before the wsl is opened which is kinda annoying. However, there is an easy fix. Add sming to the programs that launch when windows starts.  The full details are here https://support.microsoft.com/en-au/help/4026268/windows-change-startup-apps-in-windows-10
 In simple terms, press the Windows Logo Key  + R, type shell:startup, and then select OK. This opens the Startup folder. Drop and drag the xming icon from the start bar.  
 
-## Fixing ther terrible terminal 
+## Fixing the terrible terminal 
 
 The windows bash terminal shoudl now be running a fully featured ubuntu subsystem.  Its now possilbe to install any programing languages and linux packages needed and for them to function properly.  While its completly functional, the windows bash terminal is also horrible. It doesn't support tabs, the copy and paste functionality is barbaric and the defualt color schemes are horrid.  Enter ComEmu.  
 
-ConEmu is a terminal wrapper that can be downloaded from https://conemu.github.io/
-
-During the install process there is an option for a defualt tab. Chose bash::bash
+ConEmu is a terminal wrapper that can be downloaded from https://conemu.github.io/ . During the install process there is an option for a defualt tab. Chose bash::bash
 
 Now its time to customise =D 
 ```
@@ -72,5 +70,5 @@ Features > Colors
 # im a big fan of Monokai but each to their own. There are lots of options and they are all customisable 
 ```
 
-included in this repo is a script by James Goldie. If you add its contents to the bashrc file its easy to create coloured prompt on any terminal.  
+Included in this repo is a script by James Goldie. If you add its contents to the bashrc file its easy to create coloured prompt on any terminal.  
 
